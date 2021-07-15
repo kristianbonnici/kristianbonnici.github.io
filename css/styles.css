@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* ========== BASIC STYLE ========== */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== HEADER STYLES ========== */
+header {
+  background-color: #24252A;
+  box-sizing: border-box;
+  padding: 10px 5%; /* top-bottom & sides */
+
+  display: flex;
+  justify-content: space-between; /* push left & right to far edges; middle item evenly spaced between */
+  align-items: center; /* center everythin on another */
+}
+
+header .header__logo {
+  font-weight: 500;
+  font-size: 20px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+header li, header a {
+  font-weight: 500;
+  font-size: 18px;
+  color: #edf0f1;
+  text-decoration: none;
+}
+
+.nav__social-icon {
+  font-weight: 500;
+  font-size: 23px;
+  color: white;
+}
+
+header ul {
+  list-style: none;
+}
+
+header li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header li a {
+  transition: all 0.3s ease 0s; /* smooth transition to hover color */
+}
+header li a:hover {
+  color: #0088a9;
+
+}
+
+header .active {
+  padding: 50px, 50px;
+  background-color: rgba(0, 136, 169, 1);
+  background-size: 20px;
+  border: none;
+  border-radius: 50px;
+}
+
+header .active a:hover {
+  color: lightgray;
+}
