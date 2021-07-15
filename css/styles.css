@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+h1, h2, h3 {
+  text-align: center;
+}
+
 /* ========== HEADER STYLES ========== */
 header {
   background-color: #24252A;
