@@ -4,8 +4,18 @@
 body {
   background-color: #F7F8FA;
   font-family: 'Inter', sans-serif;
-  margin: 0;
+  font-size: 16px;
+  margin: 0 auto; /* top-bottom & sides */
   padding: 0;
+}
+
+/* --- LINK --- */
+a {
+  color: #717175;
+  transition: all 0.3s ease 0s; /* smooth transition to hover color */
+}
+a:hover {
+  color: #0088a9;
 }
 
 h1, h2, h3 {
@@ -57,7 +67,6 @@ header li a {
 }
 header li a:hover {
   color: #0088a9;
-
 }
 
 header .active {
@@ -73,7 +82,12 @@ header .active a:hover {
 }
 
 /* ========== INTRO STYLES ========== */
+.intro {
+  padding-left: 10%;
+}
+
 .intro-hello {
+  color: rgb(0, 136, 169, 1);
   font-size: 24px;
   font-weight: 500;
 }
@@ -82,6 +96,16 @@ header .active a:hover {
   font-weight: 800;
   letter-spacing: normal;
 }
+.intro-bio {
+  font-size: 24px;
+  font-weight: 500;
+  padding-right: 40%
+}
+.intro-bullets {
+  color: #717175;
 
+  font-weight: 500;
+  padding-right: 40%
+}
 
 /* ========== PHOTO STYLES ========== */
