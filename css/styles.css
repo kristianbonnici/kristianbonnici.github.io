@@ -1,12 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;800&display=swap');
 
-/* ========== BASIC STYLE ========== */
+/* ========== GLOBAL STYLES ========== */
 body {
   background-color: #F7F8FA;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   margin: 0 auto; /* top-bottom & sides */
   padding: 0;
+}
+
+.content-wrap {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* --- LINK --- */
@@ -18,7 +23,7 @@ a:hover {
   color: #0088a9;
 }
 
-h1, h2, h3 {
+h1, h2 {
   text-align: center;
 }
 
@@ -83,7 +88,7 @@ header .active a:hover {
 
 /* ========== INTRO STYLES ========== */
 .intro {
-  padding-left: 10%;
+  text-align: left;
 }
 
 .intro-hello {
@@ -107,5 +112,125 @@ header .active a:hover {
   font-weight: 500;
   padding-right: 40%
 }
+
+/* ========== EXPERIENCES STYLES ========== */
+
+.experiences-grid {
+  box-sizing: border-box;
+  display: grid;
+}
+
+.experience-card {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    border: 1px solid hsla(0,0%,82.7%,.397);
+}
+
+.experience-banner {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.5));
+    border-radius: 10px 10px 0 0;
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -o-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: blur(0);
+    height: 11rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    align-items: flex-end;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.experience-company-name {
+    position: absolute;
+    background: transparent;
+    height: 9rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+
+.experience-company-name-text {
+    padding: 1.5rem;
+    margin: 0;
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.experience-company-name-text, .experience-text-role {
+    font-size: 22px;
+}
+
+.experience-roundedimg {
+    position: absolute;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8rem;
+    height: 8rem;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 30%);
+    border-radius: 50%;
+}
+
+.experience-text-details {
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+
+
+.experiences-grid .row {
+  margin: 8px -16px;
+}
+
+/* Padding BETWEEN each column */
+.experiences-grid .row,
+.experiences-grid .row > .experiences-grid .column {
+  padding: 8px;
+}
+
+/* Create x equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #24252A;
+  padding: 10px;
+  text-align: center;
+  color: #edf0f1;
+}
+
+
 
 /* ========== PHOTO STYLES ========== */
