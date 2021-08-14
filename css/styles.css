@@ -3,6 +3,7 @@
 /* ========== GLOBAL STYLES ========== */
 body {
   background-color: #F7F8FA;
+  color: #000000;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
   margin: 0 auto; /* top-bottom & sides */
@@ -23,8 +24,13 @@ a:hover {
   color: #0088a9;
 }
 
-h1, h2 {
+h1 {
   text-align: center;
+}
+
+h2 {
+  text-align: left;
+  font-size: 30px;
 }
 
 /* ========== HEADER STYLES ========== */
@@ -118,6 +124,9 @@ header .active a:hover {
 .experiences-grid {
   box-sizing: border-box;
   display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+  grid-gap: 1rem 1rem;
+  gap: 1rem 1rem;
 }
 
 .experience-card {
@@ -193,43 +202,37 @@ header .active a:hover {
     border-radius: 50%;
 }
 
+.experience-text-role {
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    font-size: 25px;
+    margin: 0;
+    padding-top: 1.5rem;
+    line-height: normal;
+}
+
 .experience-text-details {
     padding: 1.5rem;
     margin-top: 2rem;
 }
 
-
-
-.experiences-grid .row {
-  margin: 8px -16px;
+.experience-text-date-loc {
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    margin: 0;
+    padding-top: 1rem;
+    font-weight: 600;
 }
 
-/* Padding BETWEEN each column */
-.experiences-grid .row,
-.experiences-grid .row > .experiences-grid .column {
-  padding: 8px;
+.experience-text-desc {
+    text-align: center;
+    color: #717175;
 }
 
-/* Create x equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-}
 
-/* Clear floats after rows */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* Content */
-.content {
-  background-color: #24252A;
-  padding: 10px;
-  text-align: center;
-  color: #edf0f1;
-}
 
 
 
