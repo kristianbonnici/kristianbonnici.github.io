@@ -11,8 +11,8 @@ body {
 }
 
 .content-wrap {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 
 /* --- LINK --- */
@@ -53,14 +53,14 @@ header .header__logo {
 
 header li, header a {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 20px;
   color: #edf0f1;
   text-decoration: none;
 }
 
 .nav__social-icon {
   font-weight: 500;
-  font-size: 23px;
+  font-size: 27px;
   color: white;
 }
 
@@ -269,6 +269,48 @@ header .active a:hover {
 .experience-text-desc {
     text-align: center;
     color: #717175;
+}
+
+
+
+/* ========== GET IN TOUCH STYLES ========== */
+.get-in-touch {
+  text-align: center;
+}
+
+.get-in-touch p {
+  margin: auto;
+  width: 60%;
+}
+
+
+.contact-me {
+  margin: auto;
+  display: grid;
+  max-width: 70%;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.contact-me .btn {
+  background: #24252a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.2rem;
+  color: #fff;
+  transition: filter 0.3s;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s; /* smooth transition to hover color */
+}
+
+.contact-me .btn:hover {
+  color: #0088a9;
 }
 
 
