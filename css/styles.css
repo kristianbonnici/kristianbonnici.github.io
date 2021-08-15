@@ -119,6 +119,46 @@ header .active a:hover {
   padding-right: 40%
 }
 
+
+/* ========== ABOUT ME STYLES ========== */
+.about-me {
+  margin: auto;
+}
+
+.about-me p,  .about-me li {
+  color: #717175;
+}
+
+.side-by-side {
+  margin: auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Narrow View */
+@media (max-width: 550px) {
+  .side-by-side {
+    display: block;
+  }
+  p {
+    position: relative;
+  }
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(140px, 200px));
+    gap: 0px 10px;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    overflow: hidden;
+    list-style: none;
+}
+
+
 /* ========== EXPERIENCES STYLES ========== */
 
 .experiences-grid {
