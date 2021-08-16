@@ -116,12 +116,6 @@ header .active a:hover {
   font-weight: 500;
   padding-right: 40%
 }
-.intro-bullets {
-  color: #717175;
-
-  font-weight: 500;
-  padding-right: 40%
-}
 
 
 /* ========== ABOUT ME STYLES ========== */
@@ -190,9 +184,11 @@ header .active a:hover {
 
 .activity-card h3 {
   color: #0088a9;
-
 }
 
+.activity-card p {
+  color: #717175;
+}
 
 /* ========== EXPERIENCES STYLES ========== */
 
