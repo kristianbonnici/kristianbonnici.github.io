@@ -70,7 +70,7 @@ header ul {
 
 header li {
   display: inline-block;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 header li a {
@@ -86,6 +86,10 @@ header .active {
   background-size: 20px;
   border: none;
   border-radius: 50px;
+}
+
+.active{
+  padding: 5px 20px;
 }
 
 header .active a:hover {
@@ -133,7 +137,7 @@ header .active a:hover {
   margin: auto;
   display: grid;
   grid-template-columns: auto auto;
-  column-gap: 2rem;
+  column-gap: 1rem;
   align-items: center;
   justify-content: center;
 }
@@ -156,6 +160,37 @@ header .active a:hover {
     margin: 20px 0px 0px;
     overflow: hidden;
     list-style: none;
+}
+
+/* ========== WHAT I DO STYLES ========== */
+
+.activity-grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-gap: 1rem 1rem;
+  gap: 1rem 1rem;
+}
+
+.activity-card {
+  padding: 1em;
+  background-color: #fff;
+  position: relative;
+  box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  border: 1px solid hsla(0, 0%, 82.7%, 0.397);
+  text-align: center;
+  color: #000;
+}
+
+.activity-card img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.activity-card h3 {
+  color: #0088a9;
+
 }
 
 
