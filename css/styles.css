@@ -161,7 +161,7 @@ header .active a:hover {
 .activity-grid {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 1rem 1rem;
   gap: 1rem 1rem;
 }
@@ -255,8 +255,8 @@ header .active a:hover {
     white-space: nowrap;
 }
 
-.experience-company-name-text, .experience-text-role {
-    font-size: 22px;
+.experience-company-name-text {
+    font-size: 25px;
 }
 
 .experience-roundedimg {
