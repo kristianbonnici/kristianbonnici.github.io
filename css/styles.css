@@ -10,6 +10,11 @@ body {
   padding: 0;
 }
 
+section {
+    margin-top: 80px;
+    margin-bottom: 90px;
+}
+
 .content-wrap {
   padding-left: 15%;
   padding-right: 15%;
@@ -393,8 +398,88 @@ header .active a:hover {
 }
 
 
+/* ========== PROJECTS STYLES ========== */
 
 
+.project-grid {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(390px,1fr));
+    grid-gap: 1rem 1rem;
+    gap: 1rem 1rem;
+}
+
+.project-card {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
+    border-radius: 10px;
+    border: 1px solid hsla(0,0%,82.7%,.397);
+}
 
 
-/* ========== PHOTO STYLES ========== */
+.project-banner {
+  background: #24252A;
+  border-radius: 10px 10px 0 0;
+  -moz-filter: blur(0);
+  -o-filter: blur(0);
+  -ms-filter: blur(0);
+  height: 20rem;
+  justify-content: center;
+  padding: 20px;
+}
+
+.project-img {
+    border-radius: 10px;
+    height: 100%;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.project-text-details {
+    padding: 1.5rem;
+}
+
+.project-text-details h2 {
+    padding: 1.5rem;
+}
+
+.badge {
+  border-radius: 20px;
+}
+
+.project-text-desc {
+    color: #717175;
+}
+
+.project-links {
+    margin: auto;
+    display: grid;
+    max-width: 70%;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-links .btn {
+  background: #24252a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem 1.5rem;
+  border-radius: 0.2rem;
+  color: #fff;
+  transition: filter 0.3s;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 10px 10px;
+  text-decoration: none;
+  transition: all 0.3s ease 0s; /* smooth transition to hover color */
+}
+
+.project-links .btn:hover {
+  color: #0088a9;
+}
