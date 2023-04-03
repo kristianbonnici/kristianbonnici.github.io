@@ -180,6 +180,12 @@ header .active a:hover {
   border: 1px solid hsla(0, 0%, 82.7%, 0.397);
   text-align: center;
   color: #000;
+  transition: transform 0.3s ease-out;
+  transform-style: preserve-3d;
+}
+
+.activity-card:hover {
+  transform: rotateY(5deg) rotateX(-5deg) scale(1.05);
 }
 
 .activity-card img {
@@ -200,7 +206,7 @@ header .active a:hover {
 .experiences-grid {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(340px,1fr));
   grid-gap: 1rem 1rem;
   gap: 1rem 1rem;
 }
@@ -211,6 +217,11 @@ header .active a:hover {
     box-shadow: 0 10px 30px -15px rgb(0 0 0 / 20%);
     border-radius: 10px;
     border: 1px solid hsla(0,0%,82.7%,.397);
+    transition: transform 0.3s ease-out;
+}
+
+.experience-card:hover {
+  transform: scale(1.05);
 }
 
 .experience-banner {
@@ -224,7 +235,7 @@ header .active a:hover {
     -o-filter: blur(0);
     -ms-filter: blur(0);
     filter: blur(0);
-    height: 11rem;
+    height: 8rem;
     display: -webkit-flex;
     display: flex;
     -webkit-align-items: flex-end;
@@ -269,7 +280,7 @@ header .active a:hover {
     object-fit: cover;
     left: 0;
     right: 0;
-    top: 7rem;
+    top: 4rem;
     margin-left: auto;
     margin-right: auto;
     width: 8rem;
@@ -316,6 +327,8 @@ header .active a:hover {
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
+  transition: transform 0.3s ease-out;
+  transform-style: preserve-3d;
 }
 
 .card-body {
